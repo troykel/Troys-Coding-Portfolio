@@ -1,5 +1,4 @@
-"""WARNING:  THIS WILL NOT RUN / DISPLAY PROPERLY IF RUN IN THE CODE PLAYGROUND. This
-program is a MODIFICATION of ANOTHER PROGRAM I found on the Internet.  The original
+This program is a MODIFICATION of ANOTHER PROGRAM I found on the Internet.  The original
 program did not include a tax component, which I felt was not realistic, so I added
 that. The original program's tip options stopped at 20%, so I increased that up to
 50%, for those people feeling extra generous.  The original program lacked any styling
