@@ -69,6 +69,8 @@ class Calculator(ttk.Frame):
             if self.historyclicks >= 8 and self.historyclicks <= self.equalclicks:
                 if self.Label8["text"] != "":
                     self.Label8["text"] = ""
+                    self.equalclicks = 0
+                    self.historyclicks = 0
 
         def delete():
             self.backspace = str(self.result.get())
@@ -998,10 +1000,11 @@ class Calculator(ttk.Frame):
             self.result.delete(0, END)
 
         def MR():
-            self.firstNumber = self.result.get()
-            self.result.delete(0, END)
             self.result.insert(0, self.memory)
-            self.memory = self.firstNumber
+            if self.firstNumber != 0:
+                self.memory = self.secondNumber
+            else:
+                self.memory = self.firstNumber
 
         def MC():
             self.memory = 0
