@@ -1,2 +1,2 @@
 # hello-world
-My 1st year of Programming
+Troy's Coding Portfolio
