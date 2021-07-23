@@ -1,2 +1,2 @@
-# hello-world
-Troy's Coding Portfolio
+Some of the programs I've written from my first 3 years of Coding.
+
