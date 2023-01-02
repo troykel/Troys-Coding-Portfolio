@@ -93,11 +93,12 @@ class Calculator(ttk.Frame):
 
         def getsecondNumber():
             self.secondNumber = self.result.get()
-            if "." in str(self.secondNumber):
-                self.secondNumber = float(self.secondNumber)
             if self.multiplyclicks == 1 and self.percentclicks == 1:
                 self.secondNumber = float(self.secondNumber)
                 print(f"self.secondNumber = {self.secondNumber}")
+
+            if "." in str(self.secondNumber):
+                self.secondNumber = float(self.secondNumber)
             else:
                 self.secondNumber = int(self.secondNumber)
                 print(f"self.secondNumber = {self.secondNumber}")
@@ -520,7 +521,7 @@ class Calculator(ttk.Frame):
                     self.bigLabelnc.destroy()
                 self.bigLabel = Label(root, text=f"Eq{self.equalclicks} = {self.chaineq}",
                                    fg="navy", anchor="w")
-                self.bigLabel.configure(font=("Verdana", 16), fg="Navy")
+                self.bigLabel.configure(font=("Verdana", 20), fg="Navy")
                 self.bigLabel.place(x=5, y=2)
                 self.labellist.append(self.bigLabel)
                 self.nbrlist.clear()
@@ -535,7 +536,7 @@ class Calculator(ttk.Frame):
                     self.bigLabel.destroy()
                 self.bigLabelnc = Label(root, text=self.eq,
                                    fg="navy", anchor="w")
-                self.bigLabelnc.configure(font=("Verdana", 16))
+                self.bigLabelnc.configure(font=("Verdana", 20))
                 self.bigLabelnc.place(x=6, y=2)
                 self.labellist.append(self.bigLabelnc)
                 self.nbrlist.clear()
